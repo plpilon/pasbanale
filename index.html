@@ -56,55 +56,34 @@
 }
         
 
-		.neon-title {
+.neon-title {
   font-family: 'Neonderthaw', cursive;
   font-size: 48px;
-  font-weight: 400;
-  color: #FF3A6E; /* dérivé lumineux de #96002A */
+  font-weight: 500;
+  color: #FFF7E6; /* blanc crème */
   text-shadow:
-    0 0 3px  #FF3A6E,
-    0 0 6px  #FF1E59,
-    0 0 10px #E00045,
-    0 0 14px #96002A;
-  animation: neon-soft 6s infinite ease-in-out;
+    0 0 3px  #FFF7E6,
+    0 0 6px  #FFECCF,
+    0 0 10px #FFE0B8,
+    0 0 14px #FFCFA1;
+  animation: neon-soft-cream 6s infinite ease-in-out;
 }
-
-/* Animation très subtile, seulement sur la taille de l’ombre */
-@keyframes neon-soft {
-  0%,
-  100% {
+/* Animation très douce, sans opacité, compatible iOS */
+@keyframes neon-soft-cream {
+  0%, 100% {
     text-shadow:
-      0 0 3px  #FF3A6E,
-      0 0 6px  #FF1E59,
-      0 0 10px #E00045,
-      0 0 14px #96002A;
+      0 0 3px  #FFF7E6,
+      0 0 6px  #FFECCF,
+      0 0 10px #FFE0B8,
+      0 0 14px #FFCFA1;
   }
 
   50% {
     text-shadow:
-      0 0 4px  #FF3A6E,
-      0 0 9px  #FF1E59,
-      0 0 14px #E00045,
-      0 0 18px #96002A;
-  }
-}
-/* Animation très subtile, seulement sur la taille de l’ombre */
-@keyframes neon-soft {
-  0%,
-  100% {
-    text-shadow:
-      0 0 3px  #FF3A6E,
-      0 0 6px  #FF1E59,
-      0 0 10px #E00045,
-      0 0 14px #96002A;
-  }
-
-  50% {
-    text-shadow:
-      0 0 4px  #FF3A6E,
-      0 0 9px  #FF1E59,
-      0 0 14px #E00045,
-      0 0 18px #96002A;
+      0 0 4px  #FFF7E6,
+      0 0 8px  #FFECCF,
+      0 0 12px #FFE0B8,
+      0 0 18px #FFCFA1;
   }
 }
 
@@ -695,6 +674,7 @@
 </body>
 
 </html>
+
 
 
 
