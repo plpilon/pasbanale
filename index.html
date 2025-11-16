@@ -57,18 +57,23 @@
         
 
 		.neon-title {
-  font-weight: 300;
   font-family: 'Neonderthaw', cursive;
   font-size: 48px;
+  font-weight: 500;
   color: #FF3A6E; /* dérivé lumineux de #96002A */
   text-shadow:
     0 0 4px  #FF3A6E,
     0 0 8px  #FF1E59,
     0 0 16px #E00045,
-    0 0 28px #96002A, /* ta couleur identitaire en halo profond */
+    0 0 28px #96002A,
     0 0 45px #96002A,
     0 0 65px #96002A;
+  
+  /* Animation de flicker */
+  animation: neon-flicker 2.2s infinite alternate;
+  will-change: opacity, text-shadow;
 }
+
         .header h2 {
             font-size: 20px;
             margin-bottom: 10px;
@@ -655,6 +660,7 @@
 </body>
 
 </html>
+
 
 
 
